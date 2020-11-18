@@ -73,8 +73,7 @@ body {
     font-size: 24px;
     font-weight: 600;
 }
-  .fab,
-  .fas {
+  .fab {
     color: white;
     font-size: 40px;
     margin-left: 10px;
