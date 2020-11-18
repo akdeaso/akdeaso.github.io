@@ -2,12 +2,103 @@
 <html lang="en">
 
 <head>
+    <title>SHINJUKUCENTER ~ KURSUS BAHASA JEPANG - Kursus Bahasa Jepang Online</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" id="font-raleway-css"
+        href="//fonts.googleapis.com/css?family=Raleway%3A400%2C400i%2C500%2C600%2C700&#038;display=swap&#038;ver=5.1.8" />
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
 </head>
 
-<body>
+<body class="bg-gradient">
+
+    <!--navbar-->
+    <nav class="navbar navbar-expand-md text-dark-blue container mb-5">
+        <div class="nav-item">
+            <img src="img/sjk-logo.png" style="width: 100%;" />
+        </div>
+        <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item text-dark-blue">
+                    <a class="nav-link" href="#about">ABOUT</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">PRODUCT</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">CONTACT</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!--form-->
+    <div class="container mt-2 mb-4">
+        <div class="title">
+            <h1 class="section-title">Daftar Kursus</h1>
+        </div>
+        <div class="row justify-content-md-center">
+            <div class="col-sm-6">
+                <form>
+                    <div class="form-group" id="form">
+                        <label for="email">Email</label>
+                        <input type="email" class="form-control" placeholder="Masukkan email" id="email">
+                        <!-- <p class="error" id="error">Tolong isi field ini</p> -->
+                    </div>
+                    <div class="form-group">
+                        <label for="nama">Nama</label>
+                        <input type="text" class="form-control" placeholder="Masukkan nama" id="nama">
+                        <!-- <p class="error" id="error">Tolong isi field ini</p> -->
+                    </div>
+                    <div class="form-group">
+                        <label for="nohp">No. Telepon</label>
+                        <input type="text" class="form-control" placeholder="Masukkan no. telepon" id="nohp">
+                        <!-- <p class="error" id="error">Tolong isi field ini</p> -->
+                    </div>
+                    <label for="kursus">Kursus</label>
+                    <select class="custom-select mb-3" id="kursus">
+                        <option value="0">Pilih kursus...</option>
+                        <option value="1">N5</option>
+                        <option value="2">N4</option>
+                        <option value="3">N3</option>
+                    </select>
+                    <!-- <p class="error" id="error">Tolong pilih salah satu</p> -->
+                    <button type="submit" class="submit btn btn-primary">Daftar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!--footer-->
+    <div class="container" id="footer">
+        <div class="img"></div>
+        <div class="row">
+            <div class="col-12 col-sm-6 text-center text-sm-left">
+                <h1>© 2020 Shinjukucenter</h1>
+            </div>
+            <div class="col-12 col-sm-6 text-center text-sm-right" id="footer-right">
+                <h1>Find us on social media</h1>
+                <div class="listsocmed">
+                    <a href="https://web.facebook.com/BahasaJepangShinjukucenter/" target="_blank" title="Facebook">
+                        <i class="fab fa-facebook" aria-hidden="true"></i>
+                    </a>
+                    <a href="https://twitter.com/shinjukucenter" target="_blank" title="Twitter">
+                        <i class="fab fa-twitter" aria-hidden="true"></i>
+                    </a>
+                    <a href="https://www.instagram.com/shinjukucenter/" target="_blank" title="Instagram">
+                        <i class="fab fa-instagram" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
 
 </body>
 
