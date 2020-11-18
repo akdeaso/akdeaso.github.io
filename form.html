@@ -59,6 +59,11 @@
                         <p class="error" id="error">Tolong isi field ini</p>
                     </div>
                     <div class="form-group">
+                        <label for="nama">Usia</label>
+                        <input type="text" class="form-control" placeholder="Masukkan usia" id="nama">
+                        <p class="error" id="error">Harap isi field ini dengan angka saja</p>
+                    </div>
+                    <div class="form-group">
                         <label for="nohp">No. Telepon</label>
                         <input type="text" class="form-control" placeholder="Masukkan no. telepon (ex: 0123456789012)"
                             id="notelp">
@@ -102,6 +107,13 @@
                 else {
                     $('#nama').next().show();
                 }
+                data = $('#usia').val();
+                if (validate_usia(data)) {
+                    $('#usia').next().hide();
+                }
+                else {
+                    $('#usia').next().show();
+                }
                 data = $('#notelp').val();
                 if (validate_notelp(data)) {
                     $('#notelp').next().hide();
@@ -122,6 +134,10 @@
         function valid_email(email) {
             var pattern = new RegExp(/^[\w-]+(\.[\w-]+)*@([\w-]+\.)+[a-zA-Z]+$/);
             return pattern.test(email);
+        }
+        function validate_notelp(notelp) {
+            var pattern = new RegExp(/^[0-9]+$/);
+            return pattern.test(notelp);
         }
         function validate_notelp(notelp) {
             var pattern = new RegExp(/^[0-9]+$/);
