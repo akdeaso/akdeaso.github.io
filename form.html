@@ -12,8 +12,6 @@
         href="//fonts.googleapis.com/css?family=Raleway%3A400%2C400i%2C500%2C600%2C700&#038;display=swap&#038;ver=5.1.8" />
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.js"></script>
 </head>
 
 <body class="bg-gradient">
@@ -21,7 +19,7 @@
     <!--navbar-->
     <nav class="navbar navbar-expand-md text-dark-blue container mb-5">
         <div class="nav-item">
-            <img src="img/sjk-logo.png" style="width: 100%;" />
+            <a href="index.html"><img src="img/sjk-logo.png" style="width: 100%;" /></a>
         </div>
         <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
             <span class="navbar-toggler-icon"></span>
@@ -29,13 +27,13 @@
         <div class="collapse navbar-collapse" id="collapsibleNavbar">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item text-dark-blue">
-                    <a class="nav-link" href="#about">ABOUT</a>
+                    <a class="nav-link" href="/index.html#about">ABOUT</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">PRODUCT</a>
+                    <a class="nav-link" href="/index.html#kelas">KELAS</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">CONTACT</a>
+                    <a class="nav-link" href="/index.html#contact">CONTACT</a>
                 </li>
             </ul>
         </div>
@@ -43,7 +41,7 @@
 
     <!--form-->
     <div class="container mt-2 mb-4">
-        <div class="title">
+        <div class=" title">
             <h1 class="section-title">Daftar Kursus</h1>
         </div>
         <div class="row justify-content-md-center">
@@ -51,32 +49,85 @@
                 <form>
                     <div class="form-group" id="form">
                         <label for="email">Email</label>
-                        <input type="email" class="form-control" placeholder="Masukkan email" id="email">
-                        <!-- <p class="error" id="error">Tolong isi field ini</p> -->
+                        <input type="email" class="form-control" placeholder="Masukkan email (ex: nama@domain.com)"
+                            id="email">
+                        <p class="error" id="error">Tolong isi field ini</p>
                     </div>
                     <div class="form-group">
                         <label for="nama">Nama</label>
                         <input type="text" class="form-control" placeholder="Masukkan nama" id="nama">
-                        <!-- <p class="error" id="error">Tolong isi field ini</p> -->
+                        <p class="error" id="error">Tolong isi field ini</p>
                     </div>
                     <div class="form-group">
                         <label for="nohp">No. Telepon</label>
-                        <input type="text" class="form-control" placeholder="Masukkan no. telepon" id="nohp">
-                        <!-- <p class="error" id="error">Tolong isi field ini</p> -->
+                        <input type="text" class="form-control" placeholder="Masukkan no. telepon (ex: 0123456789012)"
+                            id="notelp">
+                        <p class="error" id="error">Harap isi field ini dengan angka saja</p>
                     </div>
-                    <label for="kursus">Kursus</label>
-                    <select class="custom-select mb-3" id="kursus">
-                        <option value="0">Pilih kursus...</option>
-                        <option value="1">N5</option>
-                        <option value="2">N4</option>
-                        <option value="3">N3</option>
+                    <label for="kelas">Kelas</label>
+                    <select class="custom-select mb-3" id="kelas">
+                        <option value="0">Pilih kelas...</option>
+                        <option value="n5r">N5 - Kelas Reguler</option>
+                        <option value="n5p">N5 - Kelas Privat</option>
+                        <option value="n5o">N5 - Kelas Online</option>
+                        <option value="n4r">N4 - Kelas Reguler</option>
+                        <option value="n4p">N3 - Kelas Privat</option>
+                        <option value="n4o">N3 - Kelas Online</option>
                     </select>
-                    <!-- <p class="error" id="error">Tolong pilih salah satu</p> -->
-                    <button type="submit" class="submit btn btn-primary">Daftar</button>
+                    <p class="selecterror" id="error">Tolong pilih salah satu</p>
+                    <button type="submit" class="submit btn btn-success">Daftar</button>
                 </form>
             </div>
         </div>
     </div>
+
+    <script>
+        $(document).ready(function () {
+            $('.error').hide();
+            $('.selecterror').addClass('error');
+            $('.selecterror').hide();
+            $('.submit').click(function (event) {
+                data = $('#email').val();
+                if (valid_email(data)) {
+                    $('#email').next().hide();
+                }
+                else {
+                    $('#email').next().show();
+                }
+                var data = $('#nama').val();
+                var len = data.length;
+                if (len > 1) {
+                    $('#nama').next().hide();
+                }
+                else {
+                    $('#nama').next().show();
+                }
+                data = $('#notelp').val();
+                if (validate_notelp(data)) {
+                    $('#notelp').next().hide();
+                }
+                else {
+                    $('#notelp').next().show();
+                }
+                count = $('select option:selected').val();
+                if (count == 0) {
+                    $('#kelas').next().show();
+                }
+                else {
+                    $('#kelas').next().hide();
+                }
+                event.preventDefault();
+            });
+        });
+        function valid_email(email) {
+            var pattern = new RegExp(/^[\w-]+(\.[\w-]+)*@([\w-]+\.)+[a-zA-Z]+$/);
+            return pattern.test(email);
+        }
+        function validate_notelp(notelp) {
+            var pattern = new RegExp(/^[0-9]+$/);
+            return pattern.test(notelp);
+        }
+    </script>
 
     <!--footer-->
     <div class="container" id="footer">

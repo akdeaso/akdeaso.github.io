@@ -1,3 +1,15 @@
+@media (min-width: 768px ) {
+    .row {
+        position: relative;
+    }
+  
+    .bottom-align-text {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+    }
+  }
+
 .bg-gradient {
     background: rgb(82, 181, 136);
     background: linear-gradient(0deg,
@@ -9,6 +21,10 @@ body {
     font-family: "Raleway";
 }
 
+html {
+    scroll-behavior: smooth;
+  }
+  
 .content-height {
     min-height: 90%;
 }
@@ -17,6 +33,7 @@ body {
     text-align: center;
     margin-bottom: 2rem;
     font-weight: 900;
+    margin-top: 3rem;
 }
 
 .section-title{
@@ -82,4 +99,28 @@ body {
 
 #error{
     color: red;
+}
+
+.bg {
+    background-image: url(img/3452199.jpg);
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bg2 {
+    background-image: url(img/3452206.jpg);
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.textcol {
+    color: black;
+}
+
+.cardbg {
+    background-color: rgb(101, 190, 106);
 }
