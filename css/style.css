@@ -122,5 +122,36 @@ html {
 }
 
 .cardbg {
-    background-color: rgb(101, 190, 106);
+    background-color: rgb(119, 199, 123);
+}
+
+hr.divider {
+    max-width: 3.25rem;
+    border-width: 0.2rem;
+    border-color:rgb(82, 181, 136);
+}
+
+hr{
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+}
+
+.bg-custom-1{
+    background-color: rgb(56, 196, 130);
+}
+
+.bg-warning{
+    background-color: #ffc557!important;
+}
+
+.btn-warning  {
+    color: white;
+    background-color: #ff9900e0;
+    border-color:#ffaa2be0;
+}
+
+.btn-warning:hover, .btn-warning:not(:disabled):not(.disabled).active, .btn-warning:not(:disabled):not(.disabled):active, .show>.btn-warning.dropdown-toggle{
+    color: white;
+    background-color: #c27400e0;
+    border-color:#c27400e0;
 }

@@ -12,6 +12,9 @@
         href="//fonts.googleapis.com/css?family=Raleway%3A400%2C400i%2C500%2C600%2C700&#038;display=swap&#038;ver=5.1.8" />
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
 </head>
 
 <body class="bg-gradient">
@@ -41,36 +44,37 @@
 
     <!--form-->
     <div class="container mt-2 mb-4">
-        <div class=" title">
+        <div class=" title" data-aos="zoom-in-up" data-aos-duration="1500">
             <h1 class="section-title">Daftar Kursus</h1>
+            <hr class="divider">
         </div>
-        <div class="row justify-content-md-center">
+        <div class="row justify-content-md-center" data-aos="zoom-in-up" data-aos-duration="1500">
             <div class="col-sm-6">
                 <form>
                     <div class="form-group" id="form">
                         <label for="email">Email</label>
                         <input type="email" class="form-control" placeholder="Masukkan email (ex: nama@domain.com)"
                             id="email">
-                        <p class="error" id="error">Tolong isi field ini</p>
+                        <p class="error" id="error">*Harap masukkan dengan format yang benar</p>
                     </div>
                     <div class="form-group">
                         <label for="nama">Nama</label>
                         <input type="text" class="form-control" placeholder="Masukkan nama" id="nama">
-                        <p class="error" id="error">Tolong isi field ini</p>
+                        <p class="error" id="error">*Harap isi field ini</p>
                     </div>
                     <div class="form-group">
                         <label for="nama">Usia</label>
-                        <input type="text" class="form-control" placeholder="Masukkan usia" id="nama">
-                        <p class="error" id="error">Harap isi field ini dengan angka saja</p>
+                        <input type="text" class="form-control" placeholder="Masukkan usia" id="usia">
+                        <p class="error" id="error">*Harap isi field ini dengan angka saja</p>
                     </div>
                     <div class="form-group">
                         <label for="nohp">No. Telepon</label>
                         <input type="text" class="form-control" placeholder="Masukkan no. telepon (ex: 0123456789012)"
                             id="notelp">
-                        <p class="error" id="error">Harap isi field ini dengan angka saja</p>
+                        <p class="error" id="error">*Harap isi field ini dengan angka saja</p>
                     </div>
                     <label for="kelas">Kelas</label>
-                    <select class="custom-select mb-3" id="kelas">
+                    <select class="custom-select" id="kelas">
                         <option value="0">Pilih kelas...</option>
                         <option value="n5r">N5 - Kelas Reguler</option>
                         <option value="n5p">N5 - Kelas Privat</option>
@@ -79,13 +83,16 @@
                         <option value="n4p">N4 - Kelas Privat</option>
                         <option value="n4o">N4 - Kelas Online</option>
                     </select>
-                    <p class="selecterror" id="error">Tolong pilih salah satu</p>
-                    <button type="submit" class="submit btn btn-success">Daftar</button>
+                    <p class="selecterror" id="error">*Harap pilih salah satu</p>
+                    <div class="text-center mt-3">
+                        <button type="submit" class="submit btn btn-success">Daftar</button>
+                    </div>
                 </form>
             </div>
         </div>
     </div>
 
+    <!-- form validation -->
     <script>
         $(document).ready(function () {
             $('.error').hide();
@@ -135,14 +142,19 @@
             var pattern = new RegExp(/^[\w-]+(\.[\w-]+)*@([\w-]+\.)+[a-zA-Z]+$/);
             return pattern.test(email);
         }
-        function validate_notelp(notelp) {
+        function validate_usia(usia) {
             var pattern = new RegExp(/^[0-9]+$/);
-            return pattern.test(notelp);
+            return pattern.test(usia);
         }
         function validate_notelp(notelp) {
             var pattern = new RegExp(/^[0-9]+$/);
             return pattern.test(notelp);
         }
+    </script>
+
+    <!-- AOS -->
+    <script>
+        AOS.init();
     </script>
 
     <!--footer-->
