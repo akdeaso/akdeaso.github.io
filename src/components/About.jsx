@@ -14,7 +14,7 @@ const About = () => {
         </p>
         <a
           href="mailto:akdeaso@gmail.com"
-          className="block mt-3 text-md md:text-lg font-regular text-gray-700 dark:text-gray-300 underline hover:text-indigo-500 dark:hover:text-indigo-500"
+          className="block mt-3 text-md md:text-lg  text-gray-700 dark:text-gray-300 underline hover:text-indigo-500 dark:hover:text-indigo-500"
         >
           akdeaso@gmail.com
         </a>

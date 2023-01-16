@@ -14,6 +14,7 @@ const Works = () => {
             imgUrl={work.imgUrl}
             title={work.title}
             tech={work.tech}
+            workUrl={work.workUrl}
           ></WorkItem>
         ))}
       </div>
