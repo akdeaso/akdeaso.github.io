@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react";
 import HeroSection from "./components/HeroSection";
+import Services from "./components/Services";
+import Works from "./components/Works";
 
 const App = () => {
   const [theme, setTheme] = useState(null);
@@ -34,7 +36,11 @@ const App = () => {
         {theme === "dark" ? "🌙" : "☀️"}
       </button>
       <div className="font-poppins bg:white dark:bg-slate-900">
-        <HeroSection></HeroSection>
+        <div className="max-w-5xl mx-auto w-11/12">
+          <HeroSection></HeroSection>
+          <Services></Services>
+          <Works></Works>
+        </div>
       </div>
     </>
   );
