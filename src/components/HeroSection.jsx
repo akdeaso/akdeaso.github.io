@@ -8,10 +8,10 @@ const HeroSection = () => {
           Hello, Akdeas here
         </h1>
         <p className="text-md md:text-xl max-w-md mb-3 text-gray-600 dark:text-gray-300">
-          Hello, I'm a Junior React front-end developer who is still studying
-          and learning. I am currently pursuing my degree in Computer Science
-          and I am excited to apply my knowledge and skills to the development
-          of user-friendly web applications.
+          I'm a Junior React front-end developer who is still studying and
+          learning. I am currently pursuing my degree in Computer Science and I
+          am excited to apply my knowledge and skills to the development of
+          user-friendly web applications.
         </p>
         <a
           href="#works"
