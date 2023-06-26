@@ -7,10 +7,7 @@ const About = () => {
       <div className="w-full md:w-6/12">
         <SectionTitle>About Me</SectionTitle>
         <p className="text-md text-gray-600 dark:text-gray-300">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias
-          doloribus minus quam illo nesciunt animi odit iure deleniti dolore
-          unde laborum iusto, beatae quis dolor inventore optio. Quia, quaerat
-          ex!
+          To contact us via email, please find our email address below
         </p>
         <a
           href="mailto:akdeaso@gmail.com"
