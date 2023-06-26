@@ -6,19 +6,19 @@ export default [
   {
     title: "Web Design",
     description:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo eaque corrupti vel atque, iusto at odit dicta optio quas adipisci accusantium consequuntur sit est eius quae eveniet perspiciatis modi sapiente.",
+      "Attractive and responsive web design is created using ReactJS and other JavaScript-based front-end frameworks, with a focus on engaging and user-friendly experiences.",
     icon: <MdWeb className="w-full h-full" />,
   },
   {
     title: "UI Design",
     description:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo eaque corrupti vel atque, iusto at odit dicta optio quas adipisci accusantium consequuntur sit est eius quae eveniet perspiciatis modi sapiente.",
+      "User interface (UI) design is specialized using ReactJS and other JavaScript-based front-end frameworks to produce creative and interactive UIs",
     icon: <FaHandHoldingHeart className="w-full h-full" />,
   },
   {
-    title: "Web Development",
+    title: "Front-End Web Development",
     description:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo eaque corrupti vel atque, iusto at odit dicta optio quas adipisci accusantium consequuntur sit est eius quae eveniet perspiciatis modi sapiente.",
+      "Front-end technology is developed using ReactJS and other JavaScript-based front-end frameworks, ensuring seamless and efficient user experiences",
     icon: <VscCode className="w-full h-full" />,
   },
 ];
