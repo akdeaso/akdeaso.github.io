@@ -6,15 +6,7 @@ import Services from "./components/Services";
 import Works from "./components/Works";
 
 const App = () => {
-  const [theme, setTheme] = useState(null);
-
-  useEffect(() => {
-    if (window.matchMedia("(prefers-color-scheme: dark)").mathes) {
-      setTheme("dark");
-    } else {
-      setTheme("light");
-    }
-  }, []);
+  const [theme, setTheme] = useState("dark");
 
   useEffect(() => {
     if (theme === "dark") {
@@ -37,7 +29,7 @@ const App = () => {
       >
         {theme === "dark" ? "🌙" : "☀️"}
       </button>
-      <div className="font-poppins bg:white dark:bg-slate-900">
+      <div className="font-poppins bg-white dark:bg-slate-900">
         <div className="max-w-5xl mx-auto w-11/12">
           <HeroSection></HeroSection>
           <Services></Services>
