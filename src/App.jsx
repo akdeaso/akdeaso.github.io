@@ -4,6 +4,7 @@ import Footer from "./components/Footer";
 import HeroSection from "./components/HeroSection";
 import Services from "./components/Services";
 import Works from "./components/Works";
+import Skills from "./components/Skills";
 
 const App = () => {
   const [theme, setTheme] = useState("dark");
@@ -33,6 +34,7 @@ const App = () => {
         <div className="max-w-5xl mx-auto w-11/12">
           <HeroSection></HeroSection>
           <Services></Services>
+          <Skills></Skills>
           <Works></Works>
           <About></About>
           <Footer></Footer>

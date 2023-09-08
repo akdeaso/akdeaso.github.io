@@ -1,5 +1,3 @@
-import React from "react";
-
 const HeroSection = () => {
   return (
     <div id="hero" className="flex items-center justify-center flex-col py-20">
@@ -8,10 +6,10 @@ const HeroSection = () => {
           Hello, Akdeas here
         </h1>
         <p className="text-md md:text-xl max-w-md mb-3 text-gray-600 dark:text-gray-300">
-          I'm a Junior React front-end developer who is still studying and
-          learning. I am currently pursuing my degree in Computer Science and I
-          am excited to apply my knowledge and skills to the development of
-          user-friendly web applications.
+          As a Junior React front-end developer, I am constantly studying and
+          expanding my knowledge in this field. I am enthusiastic about
+          utilizing my skills and expertise to create user-friendly web
+          applications.
         </p>
         <a
           href="#works"
