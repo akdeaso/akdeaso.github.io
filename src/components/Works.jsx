@@ -13,6 +13,8 @@ const Works = () => {
             key={work.title}
             imgUrl={work.imgUrl}
             title={work.title}
+            date={work.date}
+            desc={work.desc}
             tech={work.tech}
             linkUrl={work.linkUrl}
             demoUrl={work.demoUrl}
