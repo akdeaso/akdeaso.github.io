@@ -7,7 +7,7 @@ export default [
       "https://cdn.discordapp.com/attachments/751040199319879691/1149614914088996874/screencapture-localhost-3001-2023-09-08-14_58_56.png",
     tech: ["React", "Tailwind CSS", "Node JS & Express JS", "MongoDB"],
     linkUrl: "https://github.com/akdeaso/pos-client",
-    demoUrl: "",
+    demoUrl: "https://pos-client-sigma.vercel.app/",
   },
   {
     title: "Indonesia Yanwoo",
