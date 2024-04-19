@@ -2,7 +2,7 @@ export default [
   {
     title: "STP Otomotif ITS",
     date: "October 2023 - Recent",
-    desc: "A website built to showcase the company profile of STP Otomotif ITS along with the latest news in the automotive industry",
+    desc: "A website built to showcase the company profile of STP Otomotif ITS along with the latest news in it",
     imgUrl:
       "https://cdn.discordapp.com/attachments/1230822676000538625/1230826135974055946/image.png?ex=6634bb2a&is=6622462a&hm=9ace06960597adf42ffa0932de6fd8387521ce60558c519437611bb30ae492b8&",
     tech: ["Wordpress", "Visual Composer"],
