@@ -15,7 +15,7 @@ const About = () => {
             <HiMail className="w-6 h-6 text-gray-800 dark:text-gray-300" />
           </div>
           <a
-            href="mailto:akdeaso@gmail.com"
+            href="mailto:akdeas.jobs@gmail.com"
             className="text-md md:text-lg text-gray-700 dark:text-gray-300 underline hover:text-indigo-500 dark:hover:text-indigo-500"
           >
             Email
