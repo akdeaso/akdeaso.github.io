@@ -1,4 +1,4 @@
-import { FaReact, FaDatabase } from "react-icons/fa";
+import { FaReact, FaDatabase, FaChrome } from "react-icons/fa";
 import {
   SiNodedotjs,
   SiMongodb,
@@ -7,9 +7,18 @@ import {
   SiHtml5,
   SiCss3,
   SiGit,
+  SiWebdriverio,
 } from "react-icons/si";
 
 const skills = [
+  {
+    skill: "WebdriverIO",
+    icon: <SiWebdriverio className="w-full h-full" />,
+  },
+  {
+    skill: "Appium",
+    icon: <FaChrome className="w-full h-full" />,
+  },
   {
     skill: "React JS",
     icon: <FaReact className="w-full h-full" />,

@@ -1,19 +1,19 @@
 import { MdWeb } from "react-icons/md";
-import { FaHandHoldingHeart } from "react-icons/fa";
+import { TbSettingsAutomation } from "react-icons/tb";
 import { VscCode } from "react-icons/vsc";
 
 export default [
   {
-    title: "Web Design",
+    title: "Software QA Manual",
     description:
-      "Attractive and responsive web design is created using ReactJS and other JavaScript-based front-end frameworks, with a focus on engaging and user-friendly experiences.",
+      "Comprehensive software QA services are offered, including requirement analysis, test case writing, testing, and defect reporting, ensuring thorough and effective quality assurance.",
     icon: <MdWeb className="w-full h-full" />,
   },
   {
-    title: "UI Design",
+    title: "Software QA Automation",
     description:
-      "User interface (UI) design is specialized using ReactJS and other JavaScript-based front-end frameworks to produce creative and interactive UIs",
-    icon: <FaHandHoldingHeart className="w-full h-full" />,
+      "QA automation services include test script development, automated test execution, results analysis, and framework maintenance, ensuring consistent and high-quality software performance.",
+    icon: <TbSettingsAutomation className="w-full h-full" />,
   },
   {
     title: "Front-End Web Development",
